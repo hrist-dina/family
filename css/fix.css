@@ -1,0 +1,11 @@
+.section__block_select.section__block_timetable.section__block_left {
+    padding-top: 13.5vh;
+}
+
+.timetable {
+    overflow-y: auto;
+}
+.timetable__time,
+.timetable__main {
+    min-height: min-content;
+}
