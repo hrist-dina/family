@@ -1,5 +1,29 @@
+.is-error {
+    border-bottom: 1px solid #f00 !important;
+}
+.active-listService {
+    background: #d0d0d0;
+}
+.active-listService:hover {
+    background: #d0d0d0 !important;
+}
+.no-elem {
+    display: none !important;
+}
+.service-list__content p.active-sp {
+    background: #383c91;
+    color: #fff;
+}
+.service-list__content p.active-sp span:first-child {
+    font-weight: 700;
+}
+.select-service__content {
+    height: 87%;
+    overflow: auto;
+}
+
 .section__block_select.section__block_timetable.section__block_left {
-    padding-top: 13.5vh;
+    padding-top: 11.5vh;
 }
 
 .timetable {
@@ -9,3 +33,232 @@
 .timetable__main {
     min-height: min-content;
 }
+
+
+.spec__photo {
+    width: 190px;
+    height: 190px;
+}
+
+.spec__photo img {
+    height: 100%
+}
+
+.spec__content {
+    width: calc(100% - 190px);
+}
+
+.datepicker--nav {
+    border: 4px solid #fff;
+}
+
+.datepicker--cell,
+.datepicker--day-name {
+    height: 34px;
+    border-bottom: 4px solid #fff;
+    border-left: 4px solid #fff;
+}
+
+.datepicker--day-name:last-child {
+    border-right: 4px solid #fff;
+}
+
+.datepicker--cell.-selected-,
+.datepicker--cell.-selected-.-current-,
+.datepicker--cell.-selected-.-focus- {
+    border-bottom: 4px solid #fff;
+    border-left: 4px solid #fff;
+}
+
+
+.datepicker--cells-years, 
+.datepicker--years,
+.datepicker--cells-months {
+    height: auto;
+}
+
+.datepicker--cell-month {
+    height: 40px;
+}
+
+.datepicker--cell:nth-child(7n) {
+    border-right: 4px solid #fff;
+}
+
+.datepicker--cell-month:nth-child(7n),
+.datepicker--cell-year:nth-child(7n) {
+    border-right: 0;
+}
+
+.datepicker--cell-year:nth-child(4n),
+.datepicker--cell-month:nth-child(3n) {
+   border-right: 4px solid #fff;
+}
+
+.mess {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.s-item:hover .s-item__content {
+    height: auto;
+}
+
+.s-item__content {
+    -webkit-transition: .2s ease all;
+    -moz-transition: .2s ease all;
+    -ms-transition: .2s ease all;
+    -o-transition: .2s ease all;
+    transition: .2s ease all;
+}
+
+.nav__mob {
+    border: none;
+    background: transparent;
+}
+
+.nav__mob:focus,
+.nav__mob:active {
+    outline: none;
+}
+
+@media (max-width: 1000px) {
+
+    .section_main-first-screen .section__block_left {
+        min-height: 328px
+    }
+
+    .section_main-first-screen .section__nav {
+        display: block;
+    }
+
+    .section_main-first-screen .arrow_down {
+        width: 40px;
+        height: 40px;
+    }
+
+    .section_main-first-screen .arrow_down:before,
+    .section_main-first-screen .arrow_up:before {
+        width: 14px;
+        height: 14px;
+        top: 55%;
+    }
+
+    .group .group__item {
+        animation: none;
+    }
+
+    .s-info .btn {
+        float: inherit;
+        margin-top: 25px;
+    }
+
+    .slider_calendar .slick-slide {
+        width: 100%;
+    }
+
+    .subscribe__end {
+        text-align: left;
+    }
+
+    .service__select {
+        z-index: 8;
+    }
+
+    .section__block_right .select-service {
+        position: relative;
+        top: 0;
+    }
+    .section__block_right .select-service .info_popup {
+        position: relative;
+        left: 0;
+        display: none;
+        transform: none;
+        overflow: hidden
+    }
+
+    .section__block_right .select-service .info_popup.show {
+        display: block;
+    }
+
+    .spec-detail .btn_next {
+        float: none;
+    }
+
+    .select-service__content {
+        height: 100%;
+    }
+
+    .section__block_select.section__block_timetable.section__block_left {
+        padding-top: 0;
+    }
+
+    .timetable__more {
+        width: 300px;
+    }
+
+    .section__block_timetable {
+        top: 0;
+    }
+
+    .timetable__line:last-child .timetable__more {
+        top: auto;
+        bottom: 50%;
+    }
+  
+}
+
+
+
+@media (max-width: 768px) {
+    .vacancies__tabs li {
+        margin: 0 10px 14px;
+    }
+
+    .calendar .slider__scroll {
+        height: calc(100% - 34px)
+    }
+        
+    .search {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .select-service {
+        margin: 20px 0;
+        padding: 0;
+    }
+
+    .spec__photo {
+        width: 160px;
+        height: 160px;
+    }
+
+    .spec__content {
+        width: calc(100% - 160px);
+    }
+
+    .slider_spec-page-enroll {
+        margin-bottom: 65px;
+    }
+
+    .slider_spec-page-enroll .spec {
+        margin-bottom: 5px;        
+    }
+
+    .claim__form .field input {
+        text-align: left;
+    }
+       
+}
+
+@media (max-width: 500px) {
+    .spec__content { 
+        width: 100%;
+    }
+
+    .claim__caption {
+        font-size: 15px;
+    }
+}
+
